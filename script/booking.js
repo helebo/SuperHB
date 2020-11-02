@@ -1,6 +1,6 @@
 //Iterative function to create customer options
 function selectPersons() {
-    var nrPersons = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+    var nrPersons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
     var personSelect = document.getElementById("persons");
 
     for (const val of nrPersons) {
@@ -16,21 +16,21 @@ function selectPersons() {
 function selectTime() {
 
     //Vectors for minutes and hour
-    var min = ['00','15','30','45'];
-    var hour = ['11','12','13','14','15','16','17','18','19','20','21'];
+    var min = ['00', '15', '30', '45'];
+    var hour = ['11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
 
     var timeSelect = document.getElementById('time');
 
     //For loop to iterate time options
-    for(const val1 of hour) {
-            for(const val2 of min){
-                var timeOption = document.createElement("option");
-                var time = val1 + ':' + val2;
-                timeOption.value = time;
-                var t1 = document.createTextNode(time);
-                timeOption.appendChild(t1);
-                timeSelect.appendChild(timeOption);
-            }
+    for (const val1 of hour) {
+        for (const val2 of min) {
+            var timeOption = document.createElement("option");
+            var time = val1 + ':' + val2;
+            timeOption.value = time;
+            var t1 = document.createTextNode(time);
+            timeOption.appendChild(t1);
+            timeSelect.appendChild(timeOption);
+        }
     }
 }
 
@@ -39,7 +39,7 @@ function selectTimeAlert() {
     var selTime = document.getElementById("time").value;
     var selHour = selTime.split(':');
     var newHour = parseInt(selHour[0]) + 2;
-    document.getElementById("alertTime").innerHTML = "You hold your table until " + newHour +':'+ selHour[1];
+    document.getElementById("alertTime").innerHTML = "You hold your table until " + newHour + ':' + selHour[1];
 }
 
 //Checking if selected date is valid (today or any day after today).
@@ -65,7 +65,7 @@ function selectDateAlert() {
     if (selY < yyyy) {
         alertDate.innerHTML = alert;
     } else if (yyyy == selY && selM < mm) {
-         alertDate.innerHTML = alert;
+        alertDate.innerHTML = alert;
     } else if (yyyy == selY && selM == mm && selD < dd) {
         alertDate.innerHTML = alert;
     } else {
@@ -81,8 +81,9 @@ const submitButton = document.getElementById("submitBooking");
 const popup = document.getElementById("conpopup");
 const close = document.getElementsByClassName("close")[0];
 var form = document.getElementById("bookingform");
-function popUp(){
-    popup.style.display = "block";   
+
+function popUp() {
+    popup.style.display = "block";
 }
 
 close.onclick = function() {
@@ -90,16 +91,16 @@ close.onclick = function() {
 }
 
 window.onclick = function(event) {
-  if (event.target == popup) {
-    window.location.reload();
-  }
+    if (event.target == popup) {
+        window.location.reload();
+    }
 }
 
 submitButton.addEventListener("click", function(event) {
     if (form.checkValidity()) {
         popUp();
         event.preventDefault();
-      }
+    }
 });
 
 

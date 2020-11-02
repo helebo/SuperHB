@@ -1,6 +1,7 @@
 /* Style sheet for booking form */
 
-html, body {
+html,
+body {
     margin: 0 auto;
     padding: 0;
     height: 100%;
@@ -18,18 +19,16 @@ html, body {
 
 .booking {
     width: 250px;
-    margin: 0 auto; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
     color: rgb(65, 59, 59);
-    background-color: white; 
+    background-color: white;
     position: relative;
     border: 2px solid rgb(65, 59, 59);
     border-radius: 4px;
-    
 }
-
 
 #bookingform {
     width: auto;
@@ -41,13 +40,17 @@ html, body {
     font-size: 16px;
 }
 
-#alertPersons,#alertTime, #alertDate {
-     font-size: 12px;
-     color: rgb(182, 44, 44);
-     margin-top: 0px;
+#alertPersons,
+#alertTime,
+#alertDate {
+    font-size: 12px;
+    color: rgb(182, 44, 44);
+    margin-top: 0px;
 }
 
-#bookingform input[type="text"], input[type="tel"], input[type="email"]  {
+#bookingform input[type="text"],
+input[type="tel"],
+input[type="email"] {
     width: 240px;
     height: 40px;
     border-radius: 4px;
@@ -61,12 +64,10 @@ html, body {
     border-radius: 4px;
     border: 2px solid rgb(65, 59, 59);
     cursor: pointer;
-
 }
 
 #bookingform input[type="radio"] {
     cursor: pointer;
-
 }
 
 #bookingform select {
@@ -77,12 +78,13 @@ html, body {
     cursor: pointer;
 }
 
-
-#torget{
+#torget {
     margin-bottom: 10px;
 }
 
+
 /* Make size fixed*/
+
 #bookingform textarea {
     width: 240px;
     height: 100px;
@@ -96,7 +98,7 @@ html, body {
 #submitBooking {
     border-radius: 15px;
     border: none;
-    color:  rgb(229, 226, 226);
+    color: rgb(229, 226, 226);
     background-color: rgb(65, 59, 59);
     padding: 5px;
     width: 250px;
@@ -131,20 +133,18 @@ label[for="checkterms"] {
     font-size: 12px;
 }
 
-
-.popupbox{
-    display:none;
+.popupbox {
+    display: none;
     position: fixed;
-    z-index:1;
+    z-index: 1;
     padding-top: 100px;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0, 0.4);
-
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
-.popupcontent{
+.popupcontent {
     border: 1px solid;
     margin: auto;
     padding: 30px;
@@ -152,11 +152,14 @@ label[for="checkterms"] {
     background-color: #fefefe;
     position: relative;
 }
-.close{
+
+.close {
     float: right;
     font-size: 28px;
 }
-.close:hover,.close:focus{
+
+.close:hover,
+.close:focus {
     color: #000000;
     cursor: pointer;
 }
@@ -165,8 +168,8 @@ label[for="checkterms"] {
 /*--------------- NAVBAR ------------------*/
 
 .topnav {
-    overflow: hidden; 
-    background-color:rgb(65, 59, 59);
+    overflow: hidden;
+    background-color: rgb(65, 59, 59);
     /* height: 120px;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
@@ -174,24 +177,8 @@ label[for="checkterms"] {
 
 .topnav a {
     float: left;
-    display: block; 
+    display: block;
     /* margin: 80px 70px 30px 0px; */
-    padding: 14px 16px; 
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px solid transparent;
-    transition: 0.2s ease-in;
-    font-weight: bold;
-    font-size: 24px;
-
-}
-.responsive {
-    background-color:rgb(65, 59, 59);
-}
-.responsive a{
-    float: none; 
-    display: block; 
-    text-align: left; 
     padding: 14px 16px;
     text-decoration: none;
     color: white;
@@ -199,14 +186,32 @@ label[for="checkterms"] {
     transition: 0.2s ease-in;
     font-weight: bold;
     font-size: 24px;
-    width: 100%; 
+}
+
+.responsive {
+    background-color: rgb(65, 59, 59);
+}
+
+.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
 }
 
 .responsive a:hover {
-    background-color:rgb(95, 91, 91);
+    background-color: rgb(95, 91, 91);
 }
-.topnav a:hover{
-    background-color:rgb(95, 91, 91);
+
+.topnav a:hover {
+    background-color: rgb(95, 91, 91);
 }
 
 
@@ -217,14 +222,15 @@ label[for="checkterms"] {
     height: 100px;
 } */
 
+
 /* Responsice design for navbar */
 
 #navBurger {
-    height: 30px; 
-    padding: 15.5px 16px; 
+    height: 30px;
+    padding: 15.5px 16px;
     margin: none;
-    display: none; 
-    cursor: pointer; 
+    display: none;
+    cursor: pointer;
 }
 
 #navBurger:hover {
@@ -232,58 +238,63 @@ label[for="checkterms"] {
 }
 
 @media screen and (max-width: 750px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {
+        display: none;
+    }
     #navBurger {
-        float: right; 
-        display: block; 
+        float: right;
+        display: block;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .topnav .responsive {position:relative;}
     .topnav .responsive {
-        position: absolute; 
-        right: 0; 
-        top: 0; 
-    } 
-
-    #navBurger{
-        position: absolute; 
-        right: 0; 
-        top: 0; 
-    } 
-
+        position: relative;
+    }
+    .topnav .responsive {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #navBurger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
     .topnav .responsive a {
         float: none;
         display: block;
         text-align: left;
-      }
+    }
 }
 
+
 /* -------------FOOTER--------------- */
+
 #footer {
     width: 100vw;
     background-color: rgb(65, 59, 59);
     color: white;
     position: absolute;
-    font-size:  18px;
+    font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 }
 
-#foot_content div{
-     display: inline-block;
-     margin-right: 30px;
-     padding-top: 15px;
+#foot_content div {
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 15px;
 }
 
-#footer img{
+#footer img {
     height: 20px;
     margin: 15px;
     margin-right: 10px;
     display: inline;
     height: 30px;
 }
+
 
 /*--------------------HOMEPAGE-------------------------*/
 
@@ -293,121 +304,125 @@ label[for="checkterms"] {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-color: black; 
-  }
+    background-color: black;
+}
 
-  .insertBurger{
+.insertBurger {
     width: 100vw;
     height: 110vh;
     position: absolute;
-    opacity: 0.6; 
-  }
+    opacity: 0.6;
+}
 
 #welcome {
-    margin: 0 auto; 
-    width: 100vw; 
-    position: relative; 
+    margin: 0 auto;
+    width: 100vw;
+    position: relative;
     text-align: center;
-    top: 50px;  
+    top: 50px;
 }
 
 #welcome h3 {
-    margin: 0 auto; 
-    font-size: 40px; 
-    color: white; 
-    background-color: black; 
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    background-color: black;
     opacity: 0.8;
-    padding: 20px 10px; 
+    padding: 20px 10px;
     width: 40%;
 }
+
 #logoFront {
-    width: 40%; 
-    opacity: 0.75; 
+    width: 40%;
+    opacity: 0.75;
 }
-  .openingHours {
-      display: flex;
-      place-content: center;
-      width: 300px;
-      height: 220px;
-      border-width: 8px;
-      border-color: rgb(65, 59, 59);
-      border-style: solid;
-      background-color: black;
-      opacity: 0.8  ;
-      position: absolute;
-      right: 20px;
-      bottom: 10px;
-      color: white; 
-      font-size: 20px;
-  }
 
-  #tableOpening{
+.openingHours {
+    display: flex;
+    place-content: center;
+    width: 300px;
+    height: 220px;
+    border-width: 8px;
+    border-color: rgb(65, 59, 59);
+    border-style: solid;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#tableOpening {
     font-size: 10px;
-    text-align: center; 
+    text-align: center;
     font-size: 14px;
-  }
+}
 
-  #openingHeader{
-      margin: 5px;
-  }
+#openingHeader {
+    margin: 5px;
+}
 
-  .containerHomepage2  {
-    display: flex; 
+.containerHomepage2 {
+    display: flex;
     text-align: center;
     align-content: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
 
-    }
+.blockHomepage {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    margin: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #cf272f;
+    padding: 50px 30px 10px;
+    margin-top: 60px;
+    position: relative;
+}
 
-    .blockHomepage {
-      display: inline-block;
-      width: 300px;
-      height: 250px;
-      margin: 8px;
-      border-style: solid;
-      border-width: 4px;
-      border-color: #cf272f;
-      padding: 50px 30px 10px;
-      margin-top: 60px;
-      position: relative;
-    }
+.containerHomepage2 h2 {
+    font-size: 20px;
+    margin: 0px;
+}
 
-    .containerHomepage2 h2{
-      font-size: 20px;
-      margin: 0px;
-    }
+.containerHomepage2 p {
+    font-size: 15px;
+}
 
-    .containerHomepage2 p{
-      font-size: 15px;
-    }
 
-    /*This code section is inspired by https://www.ostraining.com/blog/coding/multi-colored-css-borders/*/
-    .blockHomepage:before { 
-      content: " ";
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      border: 5px solid #e1c447;
-    }
+/*This code section is inspired by https://www.ostraining.com/blog/coding/multi-colored-css-borders/*/
 
-    .thirdBoxHomepage{
-      padding-top: 15px;
-    }
+.blockHomepage:before {
+    content: " ";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #e1c447;
+}
+
+.thirdBoxHomepage {
+    padding-top: 15px;
+}
+
 
 /* Responsive design for info boxes */
 
 @media screen and (max-width: 950px) {
     .containerHomepage2 {
-        display: flex; 
-        flex-direction: column; 
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-
     }
 }
+
 
 /*-------------ABOUT US------------------------*/
 
@@ -436,11 +451,11 @@ label[for="checkterms"] {
     /*box-shadow: 5px 5px 15px 5px #16325d;*/
 }
 
-.infoBox p{
+.infoBox p {
     line-height: 1.8;
 }
 
-.locationSlideshow{
+.locationSlideshow {
     background-color: white;
     width: 50vw;
     height: auto;
@@ -448,13 +463,17 @@ label[for="checkterms"] {
     margin-bottom: 40px;
 }
 
-.infoBox h2, .locationSlideshow h2 {
+.infoBox h2,
+.locationSlideshow h2 {
     text-align: center;
 }
 
+
 /*LOCATION SLIDESHOW*/
+
 .slideshow-container {
-    max-width: 700px;;
+    max-width: 700px;
+    ;
     position: relative;
     margin: auto;
     height: 550px;
@@ -470,7 +489,6 @@ label[for="checkterms"] {
     object-fit: cover;
 }
 
-
 .locText {
     position: absolute;
     bottom: 15%;
@@ -478,12 +496,9 @@ label[for="checkterms"] {
     padding: 8px 12px;
     text-align: center;
     color: #f2f2f2;
-    background-color: rgba(207, 39, 47,0.7);
-
+    background-color: rgba(207, 39, 47, 0.7);
     font-size: 15px;
 }
-
-
 
 .slideButton {
     position: absolute;
@@ -494,11 +509,10 @@ label[for="checkterms"] {
     outline: none;
     font-size: 3em;
     cursor: pointer;
-
     transition: 0.5s ease;
-
 }
-.slideButton + .slideButton{
+
+.slideButton+.slideButton {
     right: 0%;
 }
 
@@ -516,6 +530,7 @@ label[for="checkterms"] {
     animation: fading 5s infinite;
 }
 
+
 /* ---------MENU------------ */
 
 .mainmenu {
@@ -525,31 +540,32 @@ label[for="checkterms"] {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(65, 59, 59);
     background-color: whitesmoke;
-    }
+}
 
 .fixedsidebar {
     background-color: rgb(65, 59, 59);
-    margin-left: 32px; 
-    width: 250px; 
-    position: absolute; 
-    padding: 10px;   
+    margin-left: 32px;
+    width: 250px;
+    position: absolute;
+    padding: 10px;
     color: whitesmoke
 }
 
-.fixedsidebar a{
+.fixedsidebar a {
     text-decoration: none;
-    color:whitesmoke;
-    font-size: 14px;   
+    color: whitesmoke;
+    font-size: 14px;
 }
 
 .fixedsidebar a:hover {
     text-decoration: underline;
 }
 
-.fixedsidebar img{
-    width: 14px; 
-    margin-right: 3px; 
+.fixedsidebar img {
+    width: 14px;
+    margin-right: 3px;
 }
+
 /* For mobile view */
 @media screen and (max-width: 1220px) {
     .fixedsidebar {
@@ -562,28 +578,28 @@ label[for="checkterms"] {
 }
 /*---------------*/
 #burgers {
-    /*width: 40%;*/
-    max-width: 600px; 
+    max-width: 600px;
     height: auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     overflow: hidden; 
     margin: auto;  
     position: relative;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 .bicons {
-    width: 20px; 
+    width: 20px;
 }
 
 .burger {
-    margin: 0px; 
-    background-color: white; 
-    margin-bottom: 50px; 
-    padding: 10px; 
-    height: auto;  
+    margin: 0px;
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 10px;
+    height: auto;
 }
+
 .burgerImg {
     width: 300px; 
     height: auto; 
@@ -594,8 +610,9 @@ label[for="checkterms"] {
 }
 
 #burgers span {
-    font-weight: bold; 
+    font-weight: bold;
 }
+
 #extras {
     text-align: center;
     align-content: center;
@@ -604,17 +621,20 @@ label[for="checkterms"] {
     margin-right: auto;
 }
 
-#chipsmenu, #dipsmenu, #sidekicker {
-    width: 300px; 
-    margin: 0 auto; 
-    display: inline-block; 
-    place-content: center;  
-    background-color: white; 
-    padding: 10px; 
-    margin-bottom: 10px; 
+#chipsmenu,
+#dipsmenu,
+#sidekicker {
+    width: 300px;
+    margin: 0 auto;
+    display: inline-block;
+    place-content: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
 }
+
 #extras .price {
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 #randSelect {
@@ -622,59 +642,49 @@ label[for="checkterms"] {
     margin: auto;
     margin-bottom: 3em;
     background-color: white;
-    text-align: center;
-    width: 500px;
-    box-shadow: 5px 10px 12px 3px;
-}
-#randSelect h2, #randSelect h3{
-    margin-bottom: 0px;
-    padding-bottom: 0.2em;
-    margin-top: 0px;
-    padding-top: 0px;
 }
 
-  #btnSearch {
-    position: relative;
+#btnSearch {
     margin-top: 1rem;
     box-shadow: none;
     width: 100px;
     border: solid #cf272f;
     border-radius: 60px;
     outline: none;
-  }
+}
 
-
-  #messageBurger {
+#messageBurger {
     text-align: center;
     font-family: "Bangers", cursive;
     margin-bottom: none;
-  }
+}
 
-  #messageBurgerImg {
+#messageBurgerImg {
     width: 400px;
     max-height: 220px;
     box-shadow: none;
     margin-top: 0.1rem;
     margin-bottom: 2rem;
-    /*box-shadow: 5px 10px 12px 3px;*/
-  }
+}
 
   #burgerClick {
     position: relative;
-  }
+}
 
 
+/* ----------------CONTACT--------------------- */
 
-  /* ----------------CONTACT--------------------- */
-  .main {
+.main {
     min-height: 100%;
     position: relative;
+    margin-top: 10px;
     width: 100vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(65, 59, 59);
     background-color: whitesmoke;
-    }
-  .popupbox {
+}
+
+.popupbox {
     display: none;
     position: fixed;
     z-index: 1;
@@ -714,12 +724,15 @@ label[for="checkterms"] {
     width: 150px;
     height: 150px;
 }
+
+
 /*kontakt info box*/
 
 .flexcontainerCon {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .infobox {
@@ -735,7 +748,6 @@ label[for="checkterms"] {
     width: 40%;
     background-color: white;
     border: none;
-
 }
 
 #infobox2 {
@@ -745,15 +757,19 @@ label[for="checkterms"] {
     border: none;
     background-color: white;
 }
+
+
 /*Info boks*/
 
 .flexcontainerInfo {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .conbox {
+    margin: 5px;
     border: 1px solid;
     border-radius: 4px;
 }
@@ -772,18 +788,19 @@ label[for="checkterms"] {
     border-radius: 20px;
     border: 3px solid;
 }
+
+
 /*Map og Form boks*/
 
 .flexcontainerFormMap {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: white;
     margin-left: 40px;
     margin-right: 40px;
     padding-bottom: 40px;
-    border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px; 
 }
 
 .flexcontainerFormMap a {
@@ -798,6 +815,7 @@ label[for="checkterms"] {
     text-decoration: none;
     color: rgb(65, 59, 59);
 }
+
 
 /*Form*/
 
@@ -821,18 +839,20 @@ label[for="checkterms"] {
     border-radius: 4px;
 }
 
-#conform input[type="number"] {
+#conform input[type="tel"] {
     width: 90%;
-    padding: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
     display: inline-block;
     border: 2px solid rgb(65, 59, 59);
     border-radius: 4px;
-    -moz-appearance: textfield;
+    /*   -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+*/
 }
 
 #conform textarea {
@@ -847,7 +867,7 @@ input::-webkit-inner-spin-button {
 input[type="submit"] {
     border-radius: 15px;
     border: none;
-    color:  rgb(229, 226, 226);
+    color: rgb(229, 226, 226);
     background-color: rgb(65, 59, 59);
     padding: 5px;
     width: 95%;
@@ -855,7 +875,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-#submit:hover{
+#submit:hover {
     background-color: rgb(46, 41, 41);
 }
 
@@ -868,8 +888,6 @@ input[type="submit"] {
     justify-content: space-evenly;
 }
 
-
-
 #conmap1 {
     margin: 10px;
 }
@@ -881,18 +899,19 @@ input[type="submit"] {
 #wherehead {
     margin: 10px;
 }
+
+
 /*Header over kontakt info*/
 
-
 #contactInfo {
-    background-color: white; 
-    margin-left: 40px; 
+    background-color: white;
+    margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 10px;  
-    padding: 20px; 
-    padding-left: 100px; 
+    margin-bottom: 10px;
+    padding: 20px;
     border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px; 
+    border-radius: 4px;
 }
-/*body*/
 
+
+/*body*/
