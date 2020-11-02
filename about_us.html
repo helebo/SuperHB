@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styleRakel.css">
+  <title>SHB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Navigational bar-->
+    <nav id="navbar"></nav>
+
+    <div class="mainabout">
+      <div class="locationSlideshow">
+        <h2>Our locations</h2>
+        <!--Inspiration: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self -->
+        <div class="slideshow-container">
+          <button  class="slideButton" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="slideButton" onclick="plusSlides(1)">&#10095;</button>
+      
+          <div class="locSlide fader">
+              <img src="image/location_olav2.jpg" alt="location olav Tryggvasons">
+              <div class="locText">Our original location in Olav Tryggvasons Gate 1.</div>
+          </div>
+
+          <div class="locSlide fader">
+              <img src="image/grill.jpg" alt="employee grilling burger">
+              <div class="locText">The most tasty burgers are found in our locations.</div>
+          </div>
+        
+          <div class="locSlide fader">
+              <img src="image/location_olav.jpg" alt="location Olav Tryggvasons">
+              <div class="locText">Our restaurant in Olav Tryggvasons Gate 1.</div>
+          </div>
+
+          <div class="locSlide fader">
+              <img src="image/location_torget.jpg" alt="location Prinsens">
+              <div class="locText">Our restaurant in Prinsens gate 9.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class ="infoBox">
+        <h2>About Us</h2>
+        <p>
+        Superhero Burger gives you a <strong>real homemade burger</strong> grilled on a charcoal grill. We grind our burger meat daily so you always get a tasty and fresh burger.
+        </p>
+        <p>
+        SuperHero Burger is a growing company based in Trondheim, Norway. Opening a second restaurant in the area at just 2.5 years after its first. With a £4m (44.1NOK) annual turnover, it makes it one of the <strong>most successful new restaurants</strong> in Norway.
+This is an ideal opportunity to join a successful growing company.
+        </p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer"></footer>
+    
+    <!--Include Javascript-->
+    <script src="script/locSlideshow.js"></script>
+    <script type="text/javascript" src="script/footer_header.js"></script>
+</body>
+</html>

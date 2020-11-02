@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Insert link to css and possibly js -->
+        <meta charset="UTF-8">
+        
+        <!-- Temporarly css -->
+        <link rel="stylesheet" href="styleRakel.css">
+        <title>SHB</title>
+    </head>
+
+    <body>
+    
+    <!-- Navigation bar -->
+    <nav id="navbar"></nav>
+
+    <!-- Main page content -->
+    <div class="mainBooking">
+
+        <!-- Popup alert -->
+        <div class="popupbox" id="conpopup">
+            <div class="popupcontent">
+                <span class="close">&times</span>
+                <p>Your booking is confirmed!</p>
+            </div>  
+        </div>      
+
+        <!-- Booking form -->
+        <div class="booking">
+            <h1>Online booking</h1>   
+
+            <form id="bookingform">
+                <h3 id="bookingdetails">Booking details</h3>
+
+                <div id="reqFields">
+                    <i class="reqStar">*</i><i>Required fields</i>
+                </div>
+                
+                <!-- Choise of restaurant -->
+                <label for="where">Where?<i class="reqStar">*</i></label><br>
+                <input type="radio" id="olavtr" name="where" required>
+                <label for="olavtr">Olav Trygvasons gate</label><br>
+                <input type="radio" id="torget" name="where" required> 
+                <label for="torget">Trondheim Torg</label><br>
+                 
+                <!-- Number of persons -->
+                <label for="persons">How many?<i class="reqStar">*</i></label><br>
+                <select id="persons" name="persons" required>
+                    <img src="image/person_icon.png" height="15px">
+                    <!-- options created with selectPersons() -->
+                </select> <br>
+                <p id="alertPersons">For reservations with more than 16 people, please give us a call or send us an email.</p>
+            
+                <!-- Choose time and date--> 
+                <label for="date">Day and time <i class="reqStar">*</i></label><br>
+
+                <input type="date" id="date" name="date" value="date" onchange = "selectDateAlert()" required><br>
+                <!-- Make a automatic message that replies how long they have the table.  
+                    If the reservation is made for 14:15, the message replies 16:45 (2 hours)-->
+                <p id="alertDate"></p> 
+                
+                <select id="time" name="date" onchange = "selectTimeAlert()" required>
+                    <!-- options created with selectTime() -->
+                </select><br>
+                <!-- Message to notice the user how long they can hold the table (selected time + 2h) -->
+                <p id="alertTime"></p> 
+
+               
+                <!-- Contact information -->
+                <h3>Contact details</h3>
+                <label for="fname">First name<i class="reqStar">*</i></label><br>
+                <input type="text" id="fname" name="fname" placeholder="Your first name.." required><br>
+
+                <label for="lname">Last name<i class="reqStar">*</i></label><br>
+                <input type="text" id="lname" name="lname" placeholder="Your last name.." required><br>
+
+                <label for="phone">Phone number<i class="reqStar">*</i></label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="Your phone number.." required><br>
+
+                <label for="email">Email<i class="reqStar">*</i></label><br>
+                <input type="email" id="email" name="email" placeholder="email@adress.com" required><br>
+
+                <label for="info">Additional information</label><br>
+                <textarea id="info" name="info" placeholder="Write your message here.."></textarea><br>
+
+                <button id="submitBooking">Complete booking</button>
+
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+    </footer>
+
+        <script type="text/javascript" src="script/booking.js"></script>
+        <script type="text/javascript" src="script/footer_header.js"></script>
+    </body>
+</html>

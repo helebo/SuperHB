@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SHB</title>
+    <meta charset="utf-8" />
+    <link href="styleRakel.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav id="navbar"></nav>
+
+    <div class="popupbox" id="conpopup">
+        <div class="popupcontent">
+            <span class="close">&times</span>
+            <p>Your message has been sent!</p>
+            <img src="../media/burgerpopPNG.png" id="burgerpopcon">
+        </div>
+    </div>
+    <!--Got the idea to use modal-box as the pop-up window at w3schools.com/howto/howto_css_modals.asp-->
+
+    <div class="main" id="bodybox">
+        <div class="flexcontainerInfo">
+            <div class="conbox" id="lookbox">
+                <p>
+                    Looking for work? We are currently not hiring, but send us a message. We will contact you as soon as there is an opening!
+                </p>
+            </div>
+        </div>
+
+        <div class="flexcontainerFormMap">
+            <div id="formbox">
+                <form id="conform">
+                    <h1>Send us a message</h1>
+                    <p>Unfortunately you can't make table reservations here.
+                        <br>Please refer to the <a href="booking.html">booking page</a>. Starred fields are required.
+                    </p>
+                    <fieldset>
+                        <label for="name">
+                                <h3>Your name <i class="reqStar">*</i></h3>
+                                <input type="text" id="name" name="contact" placeholder="Enter your name here..." required autofocus>
+                            </label>
+                        <br>
+                        <label for="email">
+                                <h3>E-mail <i class="reqStar">*</i></h3>
+                                <input type="e-mail" id="email" name="contact" placeholder="Enter your e-mail address here...">
+                            </label>
+                        <br>
+                        <label for="phone">
+                                <h3>Phone number <i class="reqStar">*</i></h3>
+                                <input type="number" id="phone" name="contact" placeholder="Enter phone number here..." required>
+                            </label>
+                        <br>
+                        <label for="message">
+                                <h3>Message <i class="reqStar">*</i></h3>
+                                <textarea id="message" name="contact" rows="8" cols="40" placeholder="Enter your message here..." wrap="soft" required></textarea>
+                            </label>
+                        <br>
+                        <br>
+                        <input type="submit" id="submit" name="contact" value="Send">
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="flexcontainerMap">
+                <div>
+                    <h2 id="wherehead">Where to find us</h2>
+                </div>
+
+                <div id="conmap1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.6954602704695!2d10.400916216600775!3d63.4330179832777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319ead63a901%3A0x742fb95ee230c237!2sSuper%20Hero%20Burger!5e1!3m2!1sno!2sno!4v1603618112273!5m2!1sno!2sno"
+                        width="400" height="270" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+
+                <div id="conmap2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.0152747246148!2d10.39063311660066!3d63.429359683276104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319aec9985dd%3A0xa75c99afc06eb54c!2sSuper%20Hero%20Burger%20Torget!5e1!3m2!1sno!2sno!4v1603618487973!5m2!1sno!2sno"
+                        width="400" height="270" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <div id="contactInfo">
+            <h2 id="conText">Contact information</h2>
+            <div class="flexcontainerCon" id="contactbox">
+
+
+                <div class="infobox" id="infobox1">
+
+                    <h3>Super Hero Burger</h3>
+                    <p>Olav Tryggvasons Gate 1, 7011 Trondheim</p>
+                    <p>+47 735 13 340</p>
+                    <p><strong>Opening hours:</strong></p>
+                    <p>Monday - Tuesday: 13 - 22</p>
+                    <p>Wednesday - Onsdag: 11 - 23</p>
+                    <p>Friday - Saturday: 11 - 03</p>
+                    <p>Sunday: 11 - 23</p>
+
+                </div>
+
+                <div class="infobox" id="infobox2">
+                    <h3>Super Hero Burger Torget</h3>
+                    <p>Prinsens Gate 9, 7013 Trondheim</p>
+                    <p>+47 416 78 737</p>
+                    <p><strong>Opening hours:</strong></p>
+                    <p>Monday - Wednesday: 11 - 21</p>
+                    <p>Thursday: 11 - 22</p>
+                    <p>Friday - Saturday: 11 - 23</p>
+                    <p>Sunday: 11 - 21</p>
+                </div>
+            </div>
+        </div>
+        
+    
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+    </footer>
+
+    <script type="text/javascript" src="script/contactPop.js"></script>
+    <script type="text/javascript" src="script/footer_header.js"></script>
+
+</body>
+
+</html>
