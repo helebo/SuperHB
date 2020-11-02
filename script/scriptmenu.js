@@ -1,14 +1,3 @@
-// const toggleButton = document.getElementsByClassName('toggle-button')[0]
-// const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-// toggleButton.addEventListener('click', () => {
-//   navbarLinks.classList.toggle('active')
-// })
-
-//Loads the sound effect player upon page load, so that the sound will play also for the first click.
-Object.onload=document.getElementById("btnSearch").addEventListener("click", function () {
-  document.getElementById("linkAudio").play();});
-
 const burgers = [
   "Mr Classic Burger",
   "BBQ Burger",

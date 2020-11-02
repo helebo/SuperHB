@@ -566,14 +566,24 @@ label[for="checkterms"] {
     margin-right: 3px;
 }
 
+/* For mobile view */
+@media screen and (max-width: 1220px) {
+    .fixedsidebar {
+        position: relative;
+        margin: auto;
+        margin-top: 10px;
+        width: 580px;
+        text-align: center;
+    }
+}
+/*---------------*/
 #burgers {
-    width: 40%;
+    max-width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-left: 350px;
+    overflow: hidden; 
+    margin: auto;  
     position: relative;
     margin-top: 20px;
 }
@@ -591,10 +601,12 @@ label[for="checkterms"] {
 }
 
 .burgerImg {
-    width: 300px;
-    height: auto;
-    float: left;
-    margin-right: 15px;
+    width: 300px; 
+    height: auto; 
+    float: left; 
+    margin-right: 15px; 
+    object-fit: contain;
+    display:block;
 }
 
 #burgers span {
@@ -626,86 +638,11 @@ label[for="checkterms"] {
 }
 
 #randSelect {
+    position:relative;
+    margin: auto;
+    margin-bottom: 3em;
     background-color: white;
 }
-
-
-/* .bokx {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1850px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: "Josefin Sans:ital,wght@1", sans-serif;
-  }
-
-  .bokx-seperation {
-    background: rgb(245, 245, 245);
-    background: linear-gradient(
-      0deg,
-      rgba(245, 245, 245, 1) 0%,
-      rgba(52, 127, 188, 1) 100%
-    );
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1550px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .seperation {
-    visibility: hidden;
-  }
-
-  .bokx h2 {
-    font-size: 30px;
-    padding-top: 30px;
-  }
-
-  .bokx h3 {
-    margin-top: 30px;
-    font-size: 25px;
-  }
-
-  .bokx div p {
-    font-size: 20px;
-    margin-left: 2rem;
-    text-align: left;
-    line-height: 1.5;
-    width: 400px;
-  }
-
-  .bokx div img {
-    margin: 2rem;
-    border-radius: 60px;
-    box-shadow: 8px 8px 8px #cf272f;
-  }
-
-  div div img {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .bokx div sup a {
-    text-decoration: none;
-    color: #cf272f;
-    border-radius: 20px;
-    font-family: "Bangers", cursive;
-    font-size: 40px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .bokx div sup a:hover {
-    background-color: #555;
-  } */
 
 #btnSearch {
     margin-top: 1rem;
@@ -713,26 +650,25 @@ label[for="checkterms"] {
     width: 100px;
     border: solid #cf272f;
     border-radius: 60px;
-}
-
-#messageBurgerImage {
-    border: groove red;
-    box-shadow: none;
-    width: 80px;
+    outline: none;
 }
 
 #messageBurger {
     text-align: center;
-    border: black groove;
     font-family: "Bangers", cursive;
-    margin-bottom: 2rem;
+    margin-bottom: none;
 }
 
 #messageBurgerImg {
     width: 400px;
+    max-height: 220px;
     box-shadow: none;
-    margin-top: 1rem;
-    box-shadow: 0px 0px 32px 7px rgba(207, 39, 47, 1);
+    margin-top: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+  #burgerClick {
+    position: relative;
 }
 
 
