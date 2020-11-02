@@ -362,17 +362,53 @@ label[for="checkterms"] {
     }
 
     .blockHomepage {
-      display: inline-block;
-      width: 300px;
-      height: 250px;
-      margin: 8px;
-      border-style: solid;
-      border-width: 4px;
-      border-color: #cf272f;
-      padding: 50px 30px 10px;
-      margin-top: 60px;
-      position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 360px;
+        margin: 8px;
+        padding: 50px 30px 10px;
+        margin-top: 60px;
+        position: relative;,
     }
+
+    @media screen and (max-width: 950px) {
+        .facemask {
+            right: -400px;
+            top: 30px;
+            position: absolute;
+            width: 350px !important;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .burgerTester {
+            right: -320px;
+            top: 30px;
+            position: absolute;
+            width: 210px !important;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .discount {
+            right: -335px;
+            top: 30px;
+            position: absolute;
+            width: 230px !important;
+        }
+    }
+
+   
+
+
+
+    @media screen and (max-width: 950px) {
+        .blockHomepage {
+            height: 220px;
+            margin: 20px;
+        }
+    }
+
 
     .containerHomepage2 h2{
       font-size: 20px;
@@ -394,9 +430,6 @@ label[for="checkterms"] {
       border: 5px solid #e1c447;
     }
 
-    .thirdBoxHomepage{
-      padding-top: 15px;
-    }
 
 /* Responsive design for info boxes */
 
