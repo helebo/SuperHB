@@ -903,18 +903,20 @@ label[for="checkterms"] {
     border-radius: 4px;
 }
 
-#conform input[type="number"] {
+#conform input[type="tel"] {
     width: 90%;
-    padding: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
     display: inline-block;
     border: 2px solid rgb(65, 59, 59);
     border-radius: 4px;
-    -moz-appearance: textfield;
+    /*   -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+*/
 }
 
 #conform textarea {
