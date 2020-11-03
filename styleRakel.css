@@ -293,6 +293,7 @@ label[for="checkterms"] {
   .insertBurger{
     width: 100vw;
     height: 110vh;
+    object-fit: cover;
     position: absolute;
     opacity: 0.6; 
     
