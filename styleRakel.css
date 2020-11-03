@@ -1,7 +1,7 @@
-
 /* --------BOOKING-------- */
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -19,18 +19,16 @@ html, body {
 
 .booking {
     width: 250px;
-    margin: 0 auto; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
     color: rgb(65, 59, 59);
-    background-color: white; 
+    background-color: white;
     position: relative;
     border: 2px solid rgb(65, 59, 59);
     border-radius: 4px;
-    
 }
-
 
 #bookingform {
     width: auto;
@@ -42,13 +40,17 @@ html, body {
     font-size: 16px;
 }
 
-#alertPersons,#alertTime, #alertDate {
-     font-size: 12px;
-     color: rgb(182, 44, 44);
-     margin-top: 0px;
+#alertPersons,
+#alertTime,
+#alertDate {
+    font-size: 12px;
+    color: rgb(182, 44, 44);
+    margin-top: 0px;
 }
 
-#bookingform input[type="text"], input[type="tel"], input[type="email"]  {
+#bookingform input[type="text"],
+input[type="tel"],
+input[type="email"] {
     width: 240px;
     height: 40px;
     border-radius: 4px;
@@ -62,12 +64,10 @@ html, body {
     border-radius: 4px;
     border: 2px solid rgb(65, 59, 59);
     cursor: pointer;
-
 }
 
 #bookingform input[type="radio"] {
     cursor: pointer;
-
 }
 
 #bookingform select {
@@ -78,12 +78,13 @@ html, body {
     cursor: pointer;
 }
 
-
-#torget{
+#torget {
     margin-bottom: 10px;
 }
 
+
 /* Make size fixed*/
+
 #bookingform textarea {
     width: 240px;
     height: 100px;
@@ -97,7 +98,7 @@ html, body {
 #submitBooking {
     border-radius: 15px;
     border: none;
-    color:  rgb(229, 226, 226);
+    color: rgb(229, 226, 226);
     background-color: rgb(65, 59, 59);
     padding: 5px;
     width: 250px;
@@ -132,20 +133,18 @@ label[for="checkterms"] {
     font-size: 12px;
 }
 
-
-.popupbox{
-    display:none;
+.popupbox {
+    display: none;
     position: fixed;
-    z-index:1;
+    z-index: 1;
     padding-top: 100px;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0, 0.4);
-
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
-.popupcontent{
+.popupcontent {
     border: 1px solid;
     margin: auto;
     padding: 30px;
@@ -153,11 +152,14 @@ label[for="checkterms"] {
     background-color: #fefefe;
     position: relative;
 }
-.close{
+
+.close {
     float: right;
     font-size: 28px;
 }
-.close:hover,.close:focus{
+
+.close:hover,
+.close:focus {
     color: #000000;
     cursor: pointer;
 }
@@ -166,31 +168,14 @@ label[for="checkterms"] {
 /*--------------- NAVBAR ------------------*/
 
 .topnav {
-    overflow: hidden; 
-    background-color:#233b5e;
+    overflow: hidden;
+    background-color: #233b5e;
 }
 
 .topnav a {
     float: left;
-    display: block; 
+    display: block;
     /* margin: 80px 70px 30px 0px; */
-    padding: 14px 16px; 
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px solid transparent;
-    transition: 0.2s ease-in;
-    font-weight: bold;
-    font-size: 24px;
-
-}
-.responsive {
-    background-color:#233b5e;
-    overflow: hidden; 
-}
-.responsive a{
-    float: none; 
-    display: block; 
-    text-align: left; 
     padding: 14px 16px;
     text-decoration: none;
     color: white;
@@ -198,24 +183,44 @@ label[for="checkterms"] {
     transition: 0.2s ease-in;
     font-weight: bold;
     font-size: 24px;
-    width: 100%; 
+}
+
+.responsive {
+    background-color: #233b5e;
+    overflow: hidden;
+}
+
+.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
 }
 
 .responsive a:hover {
-    background-color:#526988;
-}
-.topnav a:hover{
     background-color: #526988;
 }
+
+.topnav a:hover {
+    background-color: #526988;
+}
+
 
 /* Responsice design for navbar */
 
 #navBurger {
-    height: 30px; 
-    padding: 15.5px 16px; 
+    height: 30px;
+    padding: 15.5px 16px;
     margin: none;
-    display: none; 
-    cursor: pointer; 
+    display: none;
+    cursor: pointer;
 }
 
 #navBurger:hover {
@@ -223,40 +228,43 @@ label[for="checkterms"] {
 }
 
 @media screen and (max-width: 760px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {
+        display: none;
+    }
     #navBurger {
-        float: right; 
-        display: block; 
+        float: right;
+        display: block;
     }
 }
- 
-@media screen and (max-width: 760px) {
 
-    #navBurger{
-        position: absolute; 
-        right: 0; 
-        top: 0; 
-    } 
-} 
+@media screen and (max-width: 760px) {
+    #navBurger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
 
 
 /* -------------FOOTER--------------- */
+
 #footer {
     width: 100vw;
-    background-color:#233b5e;
+    background-color: #233b5e;
     color: white;
     position: absolute;
-    font-size:  18px;
+    font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 }
 
-#foot_content div, #foot_content a{
-     display: inline-block;
-     margin-right: 30px;
-     padding-top: 15px;
-     text-decoration: none;
-     color: white; 
+#foot_content div,
+#foot_content a {
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: white;
 }
 
 #footer img {
@@ -286,24 +294,23 @@ label[for="checkterms"] {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-color: black; 
+    background-color: black;
     object-fit: fill;
-  }
+}
 
-  .insertBurger{
+.insertBurger {
     width: 100vw;
     height: 110vh;
     object-fit: cover;
     position: absolute;
-    opacity: 0.6; 
-    
-  }
+    opacity: 0.6;
+}
 
 #logoFront {
-    width: 40%; 
+    width: 40%;
     opacity: 0.75;
-    margin: 0 auto;  
-    position: relative; 
+    margin: 0 auto;
+    position: relative;
     display: block;
 }
   .openingHours {
@@ -325,16 +332,16 @@ label[for="checkterms"] {
 
   #tableOpening{
     font-size: 10px;
-    text-align: center; 
+    text-align: center;
     font-size: 14px;
-  }
+}
 
-  #openingHeader{
-      margin: 5px;
-  }
+#openingHeader {
+    margin: 5px;
+}
 
-  .containerHomepage2  {
-    display: flex; 
+.containerHomepage2 {
+    display: flex;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -377,52 +384,60 @@ label[for="checkterms"] {
         }
     }
 
-    @media screen and (max-width: 950px) {
-        .burgerTester {
-            right: -320px;
-            top: 30px;
-            position: absolute;
-            width: 210px !important;
-        }
+@media screen and (max-width: 950px) {
+    .facemask {
+        right: -400px;
+        top: 30px;
+        position: absolute;
+        width: 350px !important;
     }
+}
 
-    @media screen and (max-width: 950px) {
-        .discount {
-            right: -335px;
-            top: 30px;
-            position: absolute;
-            width: 230px !important;
-        }
+@media screen and (max-width: 950px) {
+    .burgerTester {
+        right: -320px;
+        top: 30px;
+        position: absolute;
+        width: 210px !important;
     }
+}
 
-    @media screen and (max-width: 950px) {
-        .blockHomepage {
-            height: 150px;
-            margin: 20px;
-        }
+@media screen and (max-width: 950px) {
+    .discount {
+        right: -335px;
+        top: 30px;
+        position: absolute;
+        width: 230px !important;
     }
+}
 
-    .containerHomepage2 h2{
-      font-size: 20px;
-      margin: 0px;
+@media screen and (max-width: 950px) {
+    .blockHomepage {
+        height: 150px;
+        margin: 20px;
     }
+}
 
+.containerHomepage2 h2 {
+    font-size: 20px;
+    margin: 0px;
+}
 
-
-    .containerHomepage2 p{
-      font-size: 15px;
-    }
+.containerHomepage2 p {
+    font-size: 15px;
+}
 
 
 /* Responsive design for info boxes */
 
 @media screen and (max-width: 950px) {
     .containerHomepage2 {
-        display: flex; 
-        flex-direction: column; 
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 }
+
 
 /*-------------ABOUT US------------------------*/
 
@@ -565,7 +580,9 @@ label[for="checkterms"] {
     margin-right: 3px;
 }
 
+
 /* For mobile view */
+
 @media screen and (max-width: 1220px) {
     .fixedsidebar {
         position: relative;
@@ -575,14 +592,17 @@ label[for="checkterms"] {
         text-align: center;
     }
 }
+
+
 /*---------------*/
+
 #burgers {
     max-width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
-    overflow: hidden; 
-    margin: auto;  
+    overflow: hidden;
+    margin: auto;
     position: relative;
     margin-top: 20px;
 }
@@ -600,12 +620,12 @@ label[for="checkterms"] {
 }
 
 .burgerImg {
-    width: 300px; 
-    height: auto; 
-    float: left; 
-    margin-right: 15px; 
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
     object-fit: contain;
-    display:block;
+    display: block;
 }
 
 #burgers span {
@@ -637,7 +657,7 @@ label[for="checkterms"] {
 }
 
 #randSelect {
-    position:relative;
+    position: relative;
     margin: auto;
     margin-bottom: 3em;
     background-color: white;
@@ -666,7 +686,7 @@ label[for="checkterms"] {
     margin-bottom: 2rem;
 }
 
-  #burgerClick {
+#burgerClick {
     position: relative;
 }
 
@@ -696,12 +716,11 @@ label[for="checkterms"] {
 }
 
 .popupcontent {
-    border: 1px solid;
+    border: 3px solid;
     margin: auto;
     padding: 30px;
     width: 30%;
-    border-radius: 30px;
-    border: 3px solid;
+    border-radius: 8px;
     background-color: #fefefe;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -717,7 +736,7 @@ label[for="checkterms"] {
     cursor: pointer;
 }
 
-#burgerpopcon {
+.burgerpopcon {
     position: absolute;
     left: 60%;
     width: 150px;
@@ -777,15 +796,8 @@ label[for="checkterms"] {
     text-align: center;
     padding: 12px 20px;
     width: 40%;
-    border-radius: 20px;
-    border: 3px solid;
-}
-
-#resbox {
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 20px;
-    border: 3px solid;
+    border-radius: 4px;
+    border: 2px solid;
 }
 
 
@@ -912,4 +924,3 @@ input[type="submit"] {
 
 
 /*body*/
-
