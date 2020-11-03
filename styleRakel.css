@@ -1,5 +1,4 @@
-
-/* Style sheet for booking form */
+    /* Style sheet for booking form */
 
 html,
 body {
@@ -301,7 +300,7 @@ label[for="checkterms"] {
 
 .containerHomepage1 {
     border-width: 2px;
-    width: 100%;
+    height: 110vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -309,9 +308,8 @@ label[for="checkterms"] {
 }
 
 .insertBurger {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100vw;
+    height: 110vh;
     position: absolute;
     opacity: 0.6;
 }
@@ -378,261 +376,238 @@ label[for="checkterms"] {
 .blockHomepage {
     display: inline-block;
     width: 300px;
-    height: 250px;
+    height: 360px;
     margin: 8px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #cf272f;
     padding: 50px 30px 10px;
     margin-top: 60px;
     position: relative;
+    margin-bottom: 100px;
+    border: solid;
+    padding-bottom: 70px;
+    border-color: #e1c447;
+    border-width: 5px;
 }
-
-.containerHomepage2 h2 {
-    font-size: 20px;
-    margin: 0px;
-}
-
-.containerHomepage2 p {
-    font-size: 15px;
-}
-
-
-/*This code section is inspired by https://www.ostraining.com/blog/coding/multi-colored-css-borders/*/
-
-.blockHomepage:before {
-    content: " ";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 5px solid #e1c447;
-}
-
-.thirdBoxHomepage {
-    padding-top: 15px;
-}
-
-
-/* Responsive design for info boxes */
 
 @media screen and (max-width: 950px) {
-    .containerHomepage2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .facemask {
+        right: -400px;
+        top: 30px;
+        position: absolute;
+        width: 350px !important;
     }
 }
 
-
-/*-------------ABOUT US------------------------*/
-
-.mainabout {
-    display: flex;
-    justify-content: center;
-    overflow: auto;
-    min-height: 100%;
-    padding-bottom: 200px;
-    margin-bottom: -200px;
-    scroll-behavior: smooth;
-    width: 100vw;
-    background-color: whitesmoke;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(65, 59, 59)
+@media screen and (max-width: 950px) {
+    .burgerTester {
+        right: -320px;
+        top: 30px;
+        position: absolute;
+        width: 210px !important;
+    }
 }
 
-.infoBox {
-    background-color: white;
-    width: 35vw;
-    height: 40%;
-    margin: 40px;
-    margin-top: 40px;
-    text-align: left;
-    padding: 1rem;
-    /*box-shadow: 5px 5px 15px 5px #16325d;*/
-}
-
-.infoBox p {
-    line-height: 1.8;
-}
-
-.locationSlideshow {
-    background-color: white;
-    width: 50vw;
-    height: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.infoBox h2,
-.locationSlideshow h2 {
-    text-align: center;
-}
-
-
-/*LOCATION SLIDESHOW*/
-
-.slideshow-container {
-    max-width: 700px;
-    ;
-    position: relative;
-    margin: auto;
-    height: 550px;
-}
-
-.locSlide {
-    display: none;
-}
-
-.locSlide img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.locText {
-    position: absolute;
-    bottom: 15%;
-    max-width: 100%;
-    padding: 8px 12px;
-    text-align: center;
-    color: #f2f2f2;
-    background-color: rgba(207, 39, 47, 0.7);
-    font-size: 15px;
-}
-
-.slideButton {
-    position: absolute;
-    bottom: 50%;
-    color: white;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 3em;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-
-.slideButton+.slideButton {
-    right: 0%;
-}
-
-.slideButton:hover {
-    color: #cf272f!important;
-    outline: white;
-    background-color: !important;
-}
-
-.fader {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation: fading 5s infinite;
-}
-
-
-/* ---------MENU------------ */
-
-.mainmenu {
-    min-height: 100%;
-    position: relative;
-    width: 100vw;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(65, 59, 59);
-    background-color: whitesmoke;
-}
-
-.fixedsidebar {
-    background-color: rgb(65, 59, 59);
-    margin-left: 32px;
-    width: 250px;
-    position: absolute;
-    padding: 10px;
-    color: whitesmoke
-}
-
-.fixedsidebar a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 14px;
-}
-
-.fixedsidebar a:hover {
-    text-decoration: underline;
-}
-
-.fixedsidebar img {
-    width: 14px;
-    margin-right: 3px;
-}
-
-#burgers {
-    width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-left: 350px;
-    position: relative;
-    margin-top: 20px;
-}
-
-.bicons {
-    width: 20px;
-}
-
-.burger {
-    margin: 0px;
-    background-color: white;
-    margin-bottom: 50px;
-    padding: 10px;
-    height: auto;
-}
-
-.burgerImg {
-    width: 300px;
-    height: auto;
-    float: left;
-    margin-right: 15px;
-}
-
-#burgers span {
-    font-weight: bold;
-}
-
-#extras {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#chipsmenu,
-#dipsmenu,
-#sidekicker {
-    width: 300px;
-    margin: 0 auto;
-    display: inline-block;
-    place-content: center;
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#extras .price {
-    font-weight: bold;
-}
-
-#randSelect {
-    background-color: white;
-}
-
-
-/* .bokx {
+@media screen and (max-width: 950px) {
+    .discount {
+        right: -335px;
+        top: 30px;
+        position: absolute;
+        width: 230px !important;
+    }
+    @media screen and (max-width: 950px) {
+        .blockHomepage {
+            height: 220px;
+            margin: 20px;
+        }
+    }
+    .containerHomepage2 h2 {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .containerHomepage2 p {
+        font-size: 15px;
+    }
+    /* Responsive design for info boxes */
+    @media screen and (max-width: 950px) {
+        .containerHomepage2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    /*-------------ABOUT US------------------------*/
+    .mainabout {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        min-height: 100%;
+        padding-bottom: 200px;
+        margin-bottom: -200px;
+        scroll-behavior: smooth;
+        width: 100vw;
+        background-color: whitesmoke;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(65, 59, 59)
+    }
+    .infoBox {
+        background-color: white;
+        width: 35vw;
+        height: 40%;
+        margin: 40px;
+        margin-top: 40px;
+        text-align: left;
+        padding: 1rem;
+        /*box-shadow: 5px 5px 15px 5px #16325d;*/
+    }
+    .infoBox p {
+        line-height: 1.8;
+    }
+    .locationSlideshow {
+        background-color: white;
+        width: 50vw;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .infoBox h2,
+    .locationSlideshow h2 {
+        text-align: center;
+    }
+    /*LOCATION SLIDESHOW*/
+    .slideshow-container {
+        max-width: 700px;
+        ;
+        position: relative;
+        margin: auto;
+        height: 550px;
+    }
+    .locSlide {
+        display: none;
+    }
+    .locSlide img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .locText {
+        position: absolute;
+        bottom: 15%;
+        max-width: 100%;
+        padding: 8px 12px;
+        text-align: center;
+        color: #f2f2f2;
+        background-color: rgba(207, 39, 47, 0.7);
+        font-size: 15px;
+    }
+    .slideButton {
+        position: absolute;
+        bottom: 50%;
+        color: white;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 3em;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .slideButton+.slideButton {
+        right: 0%;
+    }
+    .slideButton:hover {
+        color: #cf272f!important;
+        outline: white;
+        background-color: whitesmoke !important;
+    }
+    .fader {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        animation: fading 5s infinite;
+    }
+    /* ---------MENU------------ */
+    .mainmenu {
+        min-height: 100%;
+        position: relative;
+        width: 100vw;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(65, 59, 59);
+        background-color: whitesmoke;
+    }
+    .fixedsidebar {
+        background-color: rgb(65, 59, 59);
+        margin-left: 32px;
+        width: 250px;
+        position: absolute;
+        padding: 10px;
+        color: whitesmoke
+    }
+    .fixedsidebar a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 14px;
+    }
+    .fixedsidebar a:hover {
+        text-decoration: underline;
+    }
+    .fixedsidebar img {
+        width: 14px;
+        margin-right: 3px;
+    }
+    #burgers {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-left: 350px;
+        position: relative;
+        margin-top: 20px;
+    }
+    .bicons {
+        width: 20px;
+    }
+    .burger {
+        margin: 0px;
+        background-color: white;
+        margin-bottom: 50px;
+        padding: 10px;
+        height: auto;
+    }
+    .burgerImg {
+        width: 300px;
+        height: auto;
+        float: left;
+        margin-right: 15px;
+    }
+    #burgers span {
+        font-weight: bold;
+    }
+    #extras {
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #chipsmenu,
+    #dipsmenu,
+    #sidekicker {
+        width: 300px;
+        margin: 0 auto;
+        display: inline-block;
+        place-content: center;
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #extras .price {
+        font-weight: bold;
+    }
+    #randSelect {
+        background-color: white;
+    }
+    /* .bokx {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -708,276 +683,221 @@ label[for="checkterms"] {
   .bokx div sup a:hover {
     background-color: #555;
   } */
-
-#btnSearch {
-    margin-top: 1rem;
-    box-shadow: none;
-    width: 100px;
-    border: solid #cf272f;
-    border-radius: 60px;
-}
-
-#messageBurgerImage {
-    border: groove red;
-    box-shadow: none;
-    width: 80px;
-}
-
-#messageBurger {
-    text-align: center;
-    border: black groove;
-    font-family: "Bangers", cursive;
-    margin-bottom: 2rem;
-}
-
-#messageBurgerImg {
-    width: 400px;
-    box-shadow: none;
-    margin-top: 1rem;
-    box-shadow: 0px 0px 32px 7px rgba(207, 39, 47, 1);
-}
-
-
-/* ----------------CONTACT--------------------- */
-
-.main {
-    min-height: 100%;
-    position: relative;
-    margin-top: 10px;
-    width: 100vw;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(65, 59, 59);
-    background-color: whitesmoke;
-}
-
-.popupbox {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.4);
-}
-
-.popupcontent {
-    border: 1px solid;
-    margin: auto;
-    padding: 30px;
-    width: 30%;
-    border-radius: 30px;
-    border: 3px solid;
-    background-color: #fefefe;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-
-.close {
-    float: right;
-    font-size: 28px;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    cursor: pointer;
-}
-
-#burgerpopcon {
-    position: absolute;
-    left: 60%;
-    width: 150px;
-    height: 150px;
-}
-
-
-/*kontakt info box*/
-
-.flexcontainerCon {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.infobox {
-    font-size: 13px;
-    border: 1px solid;
-    border-radius: 4px;
-}
-
-#infobox1 {
-    padding: 12px 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 40%;
-    background-color: white;
-    border: none;
-}
-
-#infobox2 {
-    padding: 12px 20px;
-    margin: 10px;
-    width: 40%;
-    border: none;
-    background-color: white;
-}
-
-
-/*Info boks*/
-
-.flexcontainerInfo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.conbox {
-    margin: 5px;
-    border: 1px solid;
-    border-radius: 4px;
-}
-
-#lookbox {
-    text-align: center;
-    padding: 12px 20px;
-    width: 40%;
-    border-radius: 20px;
-    border: 3px solid;
-}
-
-#resbox {
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 20px;
-    border: 3px solid;
-}
-
-
-/*Map og Form boks*/
-
-.flexcontainerFormMap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 40px;
-}
-
-.flexcontainerFormMap a {
-    text-decoration: none;
-}
-
-.flexcontainerFormMap a:hover {
-    text-decoration: underline;
-}
-
-.flexcontainerFormMap a:visited {
-    text-decoration: none;
-    color: rgb(65, 59, 59);
-}
-
-
-/*Form*/
-
-#formbox {
-    width: 40%;
-}
-
-#conform input[type="text"] {
-    width: 90%;
-    padding: 8px;
-    display: inline-block;
-    border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px;
-}
-
-#conform input[type="e-mail"] {
-    width: 90%;
-    padding: 8px;
-    display: inline-block;
-    border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px;
-}
-
-#conform input[type="tel"] {
-    width: 90%;
-    padding-right: 8px;
-    padding-left: 8px;
-    display: inline-block;
-    border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px;
-    /*   -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-*/
-}
-
-#conform textarea {
-    width: 85%;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px;
-    resize: none;
-}
-
-input[type="submit"] {
-    border-radius: 15px;
-    border: none;
-    color: rgb(229, 226, 226);
-    background-color: rgb(65, 59, 59);
-    padding: 5px;
-    width: 95%;
-    text-align: center;
-    cursor: pointer;
-}
-
-#submit:hover {
-    background-color: rgb(46, 41, 41);
-}
-
-
-/*Bare map boks*/
-
-.flexcontainerMap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#conmap1 {
-    margin: 10px;
-}
-
-#conmap2 {
-    margin: 10px;
-}
-
-#wherehead {
-    margin: 10px;
-}
-
-
-/*Header over kontakt info*/
-
-#contactInfo {
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 10px;
-    padding: 20px;
-    border: 2px solid rgb(65, 59, 59);
-    border-radius: 4px;
-}
-
-
-/*body*/
+    #btnSearch {
+        margin-top: 1rem;
+        box-shadow: none;
+        width: 100px;
+        border: solid #cf272f;
+        border-radius: 60px;
+    }
+    #messageBurgerImage {
+        border: groove red;
+        box-shadow: none;
+        width: 80px;
+    }
+    #messageBurger {
+        text-align: center;
+        border: black groove;
+        font-family: "Bangers", cursive;
+        margin-bottom: 2rem;
+    }
+    #messageBurgerImg {
+        width: 400px;
+        box-shadow: none;
+        margin-top: 1rem;
+        box-shadow: 0px 0px 32px 7px rgba(207, 39, 47, 1);
+    }
+    /* ----------------CONTACT--------------------- */
+    .main {
+        min-height: 100%;
+        position: relative;
+        width: 100vw;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(65, 59, 59);
+        background-color: whitesmoke;
+    }
+    .popupbox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.4);
+    }
+    .popupcontent {
+        border: 1px solid;
+        margin: auto;
+        padding: 30px;
+        width: 30%;
+        border-radius: 30px;
+        border: 3px solid;
+        background-color: #fefefe;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    .close {
+        float: right;
+        font-size: 28px;
+    }
+    .close:hover,
+    .close:focus {
+        color: #000;
+        cursor: pointer;
+    }
+    #burgerpopcon {
+        position: absolute;
+        left: 60%;
+        width: 150px;
+        height: 150px;
+    }
+    /*kontakt info box*/
+    .flexcontainerCon {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+    }
+    .infobox {
+        font-size: 13px;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+    #infobox1 {
+        padding: 12px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 40%;
+        background-color: white;
+        border: none;
+    }
+    #infobox2 {
+        padding: 12px 20px;
+        margin: 10px;
+        width: 40%;
+        border: none;
+        background-color: white;
+    }
+    /*Info boks*/
+    .flexcontainerInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .conbox {
+        border: 1px solid;
+        border-radius: 4px;
+    }
+    #lookbox {
+        text-align: center;
+        padding: 12px 20px;
+        width: 40%;
+        border-radius: 20px;
+        border: 3px solid;
+    }
+    #resbox {
+        text-align: center;
+        padding: 20px 20px;
+        border-radius: 20px;
+        border: 3px solid;
+    }
+    /*Map og Form boks*/
+    .flexcontainerFormMap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: white;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-bottom: 40px;
+        border: 2px solid rgb(65, 59, 59);
+        border-radius: 4px;
+    }
+    .flexcontainerFormMap a {
+        text-decoration: none;
+    }
+    .flexcontainerFormMap a:hover {
+        text-decoration: underline;
+    }
+    .flexcontainerFormMap a:visited {
+        text-decoration: none;
+        color: rgb(65, 59, 59);
+    }
+    /*Form*/
+    #formbox {
+        width: 40%;
+    }
+    #conform input[type="text"] {
+        width: 90%;
+        padding: 8px;
+        display: inline-block;
+        border: 2px solid rgb(65, 59, 59);
+        border-radius: 4px;
+    }
+    #conform input[type="e-mail"] {
+        width: 90%;
+        padding: 8px;
+        display: inline-block;
+        border: 2px solid rgb(65, 59, 59);
+        border-radius: 4px;
+    }
+    #conform input[type="number"] {
+        width: 90%;
+        padding: 8px;
+        display: inline-block;
+        border: 2px solid rgb(65, 59, 59);
+        border-radius: 4px;
+        -moz-appearance: textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    #conform textarea {
+        width: 85%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid rgb(65, 59, 59);
+        border-radius: 4px;
+        resize: none;
+    }
+    input[type="submit"] {
+        border-radius: 15px;
+        border: none;
+        color: rgb(229, 226, 226);
+        background-color: rgb(65, 59, 59);
+        padding: 5px;
+        width: 95%;
+        text-align: center;
+        cursor: pointer;
+    }
+    #submit:hover {
+        background-color: rgb(46, 41, 41);
+    }
+    /*Bare map boks*/
+    .flexcontainerMap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #conmap1 {
+        margin: 10px;
+    }
+    #conmap2 {
+        margin: 10px;
+    }
+    #wherehead {
+        margin: 10px;
+    }
+    /*Header over kontakt info*/
+    #contactInfo {
+        background-color: white;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        padding: 20px;
+        padding-left: 100px;
+        border: 2px solid rgb(65, 59, 59);
+        border-radius: 4px;
+    }
+    /*body*/
