@@ -10,10 +10,6 @@ function createNavBar() {
     // var nav_content = document.createElement("div");
     // nav_content.id = "navContent";
 
-    // var nav_logo = document.createElement("img");
-    // nav_logo.id = "navLogo";
-    // nav_logo.src = "image/logo.png";
-
     var nav_home = document.createElement("a");
     nav_home.id = "navhome";
 
@@ -86,10 +82,10 @@ function createFooter() {
     foot_content.id = 'foot_content';
 
     var foot_icons = document.createElement("div");
-    foot_icons.id = 'foot_icons'
+    foot_icons.id = 'foot_icons';
 
     //left content
-    var footDiv_left = document.createElement("div");
+    var footDiv_left = document.createElement("a");
     footDiv_left.id = 'footDiv_left'; 
 
     //middle content
@@ -104,35 +100,44 @@ function createFooter() {
     var foot_face = document.createElement('a');
     foot_face.href = "https://www.facebook.com/superheroburger.tryggvasonsgt";
     foot_face.target = "_blank";
+    foot_face.rel = "noopener noreferrer";
+
     var foot_inst = document.createElement('a');
     foot_inst.href = "https://www.instagram.com/superheroburger/?hl=nb";
     foot_inst.target = "_blank";
+    foot_inst.rel = "noopener noreferrer";
+
+    var foot_arrow = document.createElement('a');
+    foot_arrow.href = "#top";
 
     var face_icon = document.createElement('img');
     face_icon.src = "image/facebook.png";
+
     var inst_icon = document.createElement('img');
     inst_icon.src = "image/instagram.png";
 
-
-
+    var arrow_icon = document.createElement('img');
+    arrow_icon.src = 'image/arrowup.png';
+    
     //creating text nodes and appending childnodes for footer content
     var foot_left = document.createTextNode('contact@shb.com');
     footDiv_left.appendChild(foot_left);
+    footDiv_left.href = "mailto:contact@shb.com";
 
     var foot_middle = document.createTextNode('Olav Trygvasons gate 10, 7012 Trondheim');
     footDiv_middle.appendChild(foot_middle);
-
-    var foot_right = document.createTextNode('SHB 2020');
-    footDiv_right.appendChild(foot_right);
+    footDiv_right.innerHTML = '&copy'+'SHB'+''+'2020';
 
     foot_face.appendChild(face_icon);
     foot_inst.appendChild(inst_icon);
+    foot_arrow.append(arrow_icon);
 
     foot_content.appendChild(footDiv_left);
     foot_content.appendChild(footDiv_middle);
     foot_content.appendChild(footDiv_right);
     foot_icons.appendChild(foot_face);
     foot_icons.appendChild(foot_inst);
+    foot_icons.appendChild(foot_arrow);
 
     footer.appendChild(foot_content);
     footer.appendChild(foot_icons);
