@@ -369,7 +369,13 @@ label[for="checkterms"] {
         padding: 50px 30px 10px;
         margin-top: 60px;
         position: relative;
+        margin-bottom: 100px;
+        border: solid;
+        padding-bottom: 70px;
+        border-color: #e1c447;
+        border-width: 5px;
     }
+
 
     @media screen and (max-width: 950px) {
         .facemask {
@@ -396,11 +402,6 @@ label[for="checkterms"] {
             position: absolute;
             width: 230px !important;
         }
-    }
-
-   
-
-
 
     @media screen and (max-width: 950px) {
         .blockHomepage {
@@ -408,7 +409,6 @@ label[for="checkterms"] {
             margin: 20px;
         }
     }
-
 
     .containerHomepage2 h2{
       font-size: 20px;
@@ -419,17 +419,7 @@ label[for="checkterms"] {
       font-size: 15px;
     }
 
-    /*This code section is inspired by https://www.ostraining.com/blog/coding/multi-colored-css-borders/*/
-    .blockHomepage:before { 
-      content: " ";
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      border: 5px solid #e1c447;
-    }
-
+    
 
 /* Responsive design for info boxes */
 
