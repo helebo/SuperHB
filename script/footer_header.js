@@ -100,10 +100,12 @@ function createFooter() {
     var foot_face = document.createElement('a');
     foot_face.href = "https://www.facebook.com/superheroburger.tryggvasonsgt";
     foot_face.target = "_blank";
+    foot_face.rel = "noopener noreferrer";
 
     var foot_inst = document.createElement('a');
     foot_inst.href = "https://www.instagram.com/superheroburger/?hl=nb";
     foot_inst.target = "_blank";
+    foot_inst.rel = "noopener noreferrer";
 
     var foot_arrow = document.createElement('a');
     foot_arrow.href = "#top";
@@ -124,7 +126,6 @@ function createFooter() {
 
     var foot_middle = document.createTextNode('Olav Trygvasons gate 10, 7012 Trondheim');
     footDiv_middle.appendChild(foot_middle);
-
     footDiv_right.innerHTML = '&copy'+'SHB'+''+'2020';
 
     foot_face.appendChild(face_icon);
