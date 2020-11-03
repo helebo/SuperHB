@@ -18,13 +18,15 @@
         <div class="popupcontent">
             <span class="close">&times</span>
             <p>Your message has been sent!</p>
-            <img src="../media/burgerpopPNG.png" id="burgerpopcon">
+            <img src="image/burgerpopPNG.png" id="burgerpopcon">
         </div>
     </div>
     <!--Got the idea to use modal-box as the pop-up window at w3schools.com/howto/howto_css_modals.asp-->
 
     <div class="main" id="bodybox">
+
         <div class="flexcontainerInfo">
+
             <div class="conbox" id="lookbox">
                 <p>
                     Looking for work? We are currently not hiring, but send us a message. We will contact you as soon as there is an opening!
@@ -36,8 +38,9 @@
             <div id="formbox">
                 <form id="conform">
                     <h1>Send us a message</h1>
-                    <p>Unfortunately you can't make table reservations here.
-                        <br>Please refer to the <a href="booking.html">booking page</a>. Starred fields are required.
+                    <p>Unfortunately you can't make table reservations here. 
+                    You can however do this <a href="booking.html">here</a>!
+                        <br> All fields are required.
                     </p>
                     <fieldset>
                         <label for="name">
@@ -47,12 +50,12 @@
                         <br>
                         <label for="email">
                                 <h3>E-mail <i class="reqStar">*</i></h3>
-                                <input type="e-mail" id="email" name="contact" placeholder="Enter your e-mail address here...">
+                                <input type="e-mail" id="email" name="contact" placeholder="Enter your e-mail address here..." required>
                             </label>
                         <br>
                         <label for="phone">
                                 <h3>Phone number <i class="reqStar">*</i></h3>
-                                <input type="number" id="phone" name="contact" placeholder="Enter phone number here..." required>
+                                <input type="tel" id="phone" name="contact" pattern="[0-9]{8}" placeholder="Enter phone number here..." required>
                             </label>
                         <br>
                         <label for="message">
@@ -87,9 +90,6 @@
         </div>
 
 
-        <br>
-
-
         <div id="contactInfo">
             <h2 id="conText">Contact information</h2>
             <div class="flexcontainerCon" id="contactbox">
@@ -120,8 +120,8 @@
                 </div>
             </div>
         </div>
-        
-    
+
+
 
 
 
