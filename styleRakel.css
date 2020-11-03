@@ -311,7 +311,7 @@ label[for="checkterms"] {
       place-content: center;
       width: 300px;
       height: 220px;
-      border-width: 8px;
+      border-width: 4px;
       border-color:  #e1c447;
       border-style: solid;
       background-color: black;
@@ -340,8 +340,17 @@ label[for="checkterms"] {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-
     }
+
+    .containerHomepage2 a {
+        color: rgb(65, 59, 59);
+    }
+
+    .containerHomepage2 a:visited {
+        color: rgb(65, 59, 59);
+    }
+
+
 
     .blockHomepage {
         display: inline-block;
@@ -794,12 +803,10 @@ label[for="checkterms"] {
 }
 
 .flexcontainerFormMap a {
-    text-decoration: none;
+    color: none;
 }
 
-.flexcontainerFormMap a:hover {
-    text-decoration: underline;
-}
+
 
 .flexcontainerFormMap a:visited {
     text-decoration: none;
